@@ -24,9 +24,10 @@ body {
 }
 
 .profile-pic {
-    width: 100%;
-    border: 2px solid #7a2e2e;
-    margin-bottom: 10px;
+    width: 80%;                  /* was 100% → smaller photo */
+    max-width: 160px;
+    margin: 0 auto 8px auto;     /* center + less bottom space */
+    display: block;
 }
 
 .sidebar h2 {
