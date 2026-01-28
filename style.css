@@ -197,3 +197,32 @@ body {
     background: #fff;
     border-top: 1px solid #eee;
 }
+/* Force menu links to be always clearly visible */
+.sidebar .menu a,
+.sidebar .menu li a {
+    color: #ffffff !important;          /* pure white – maximum contrast on dark bg */
+    opacity: 1 !important;              /* ensure no fade-out */
+    visibility: visible !important;
+    text-decoration: none;
+    font-weight: 500;                   /* slightly bolder for readability */
+    padding: 10px 15px;                 /* better click area */
+    display: block;                     /* full-width link */
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Better hover state */
+.sidebar .menu a:hover,
+.sidebar .menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);  /* subtle light overlay */
+    color: #ffeb3b !important;          /* bright yellow for strong hover feedback */
+    text-decoration: none;
+}
+
+/* Optional: make whole list item clickable & visible */
+.sidebar .menu li {
+    margin: 4px 0;
+}
+
+.sidebar .menu li:hover {
+    background-color: rgba(122, 46, 46, 0.3);  /* reddish tint matching your border */
+}
