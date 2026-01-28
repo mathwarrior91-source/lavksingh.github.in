@@ -72,3 +72,22 @@ body {
     font-size: 12px;
     color: #555;
 }
+/* Social profile icons styling */
+.profile-links {
+    margin: 1em 0;          /* optional: adds some vertical breathing room */
+}
+
+.profile-links a {
+    margin-right: 1em;      /* space between the two logos — adjust as needed: 0.8em, 12px, 15px, etc. */
+    text-decoration: none;  /* removes any link underline if present */
+    display: inline-block;  /* helps with consistent spacing */
+}
+
+.profile-links img {
+    vertical-align: middle; /* aligns the logos nicely if their heights differ slightly */
+    transition: opacity 0.2s; /* optional: subtle hover effect */
+}
+
+.profile-links a:hover img {
+    opacity: 0.8;           /* optional: slight fade on hover */
+}
